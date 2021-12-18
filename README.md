@@ -19,7 +19,7 @@ Your users should be able to:
  - Desktop-first workflow
 
 ### What I learned
- - HTML <pre> tag
+ - HTML (<pre>) tag
  - JavaScript setInterval
 
 ### Author
