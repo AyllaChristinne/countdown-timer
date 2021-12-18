@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+    --color-grayish-blue: hsl(237, 18%, 59%);
+    --color-soft-red: hsl(345, 95%, 68%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-dark-desaturated-blue: hsl(236, 21%, 26%);
+    --color-very-dark-blue: hsl(235, 16%, 14%);
+    --color-black-blue: hsl(234, 17%, 12%);
+    font-size: 10px;
+}
+
+body {
+    background: url('./images/bg-stars.svg');
+    background-size: contain;
+    background-color: var(--color-very-dark-blue);
+    background-repeat: no-repeat;
+
+    font-family: 'Red Hat Text', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 10rem 0 1rem;
+}
+
+#time-remaining {
+    width: 60%;
+    margin: 0 auto;
+    padding: 8rem 10rem 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-up {
+    background-color: hsl(240, 21%, 22%);
+    padding: 1.5rem 5rem;
+    border-radius: 0.5rem;
+    border-bottom: 1px var(--color-very-dark-blue) solid;
+}
+
+.card-down {
+    background-color: var(--color-dark-desaturated-blue);
+    padding: 1.5rem 5rem;
+    border-radius: 0.5rem;
+}
+
+.blank {
+    margin: 0;
+    padding: 0;
+}
+
+.number {
+    color: var(--color-soft-red);
+    font-size: 4rem;
+    margin: -7rem 0 3rem;
+    opacity: 1;
+}
+
+.label {
+    color: var(--color-grayish-blue); 
+    margin: 0;  
+    font-size: 1.3rem;
+}
+
+footer {
+    width: 100%;
+    background: url('./images/pattern-hills.svg');
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.footer-icons {
+    margin-top: 15rem !important;
+}
+
+.footer-icons svg {
+    fill: var(--color-grayish-blue) !important;
+}
+
+.footer-icons svg:hover {
+    fill: var(--color-soft-red) !important;
+}
+
+.attribution {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--color-grayish-blue);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-grayish-blue); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-dark-desaturated-blue); 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        position: fixed;
+        text-align: center;
+    }
+
+    .title {
+        margin: 10rem auto;
+        font-size: 1.5rem;
+    }
+
+    #time-remaining {
+        margin: 0 auto 10rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        column-gap: 2rem;
+    }
+
+    .card {
+        margin-bottom: 2.5rem;
+    }
+
+    footer {
+        background-position: right;
+    }
+
+    .attribution{
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+}
